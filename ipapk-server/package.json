@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      "ipapk-server",
+      ""
+    ]
+  ],
+  "_from": "ipapk-server@latest",
+  "_id": "ipapk-server@0.2.9",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ipapk-server",
+  "_nodeVersion": "5.10.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ipapk-server-0.2.9.tgz_1517208349818_0.2857837874908"
+  },
+  "_npmUser": {
+    "email": "yzhzh@outlook.com",
+    "name": "zhao0"
+  },
+  "_npmVersion": "3.8.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ipapk-server",
+    "raw": "ipapk-server",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ipapk-server/-/ipapk-server-0.2.9.tgz",
+  "_shasum": "a581d654bd830849194cf5b209963995c0387ecf",
+  "_shrinkwrap": null,
+  "_spec": "ipapk-server",
+  "_where": "",
+  "author": {
+    "name": "zhao0"
+  },
+  "bin": {
+    "ipapk-server": "ipapk-server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/zhao0/ipapk-server/issues"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "apk-parser3": "^0.1.6",
+    "commander": "^2.9.0",
+    "dbushell-grunt-mustatic": "^0.1.1",
+    "express": "^4.13.1",
+    "fs-extra": "^0.30.0",
+    "ipa-extract-info": "^1.2.2",
+    "multiparty": "^4.1.2",
+    "mustache": "^2.1.2",
+    "shelljs": "^0.7.0",
+    "sqlite3": "^3.1.8",
+    "strftime": "^0.9.2",
+    "underscore": "^1.8.3",
+    "uuid": "^3.0.1"
+  },
+  "description": "Create a HTTPS Server to install ipa and apk locally",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a581d654bd830849194cf5b209963995c0387ecf",
+    "tarball": "https://registry.npmjs.org/ipapk-server/-/ipapk-server-0.2.9.tgz"
+  },
+  "gitHead": "ab97da79ffb4c31d825824c812bc4c47c1fb822c",
+  "homepage": "https://github.com/zhao0/ipapk-server",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "yzhzh@outlook.com",
+      "name": "zhao0"
+    }
+  ],
+  "name": "ipapk-server",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhao0/ipapk-server.git"
+  },
+  "scripts": {
+    "install": "node install.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.2.9"
+}

@@ -1,0 +1,64 @@
+http://192.168.88.241:1234
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::1234
+    at Object.exports._errnoException (util.js:949:11)
+    at exports._exceptionWithHostPort (util.js:972:20)
+    at Server._listen2 (net.js:1253:14)
+    at listen (net.js:1289:10)
+    at Server.listen (net.js:1385:5)
+    at EventEmitter.listen (/usr/local/lib/node_modules/ipapk-server/node_modules/express/lib/application.js:618:24)
+    at main (/usr/local/lib/node_modules/ipapk-server/ipapk-server.js:238:7)
+    at Object.<anonymous> (/usr/local/lib/node_modules/ipapk-server/ipapk-server.js:110:3)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+http://192.168.88.241:1234
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::1234
+    at Object.exports._errnoException (util.js:949:11)
+    at exports._exceptionWithHostPort (util.js:972:20)
+    at Server._listen2 (net.js:1253:14)
+    at listen (net.js:1289:10)
+    at Server.listen (net.js:1385:5)
+    at EventEmitter.listen (/usr/local/lib/node_modules/ipapk-server/node_modules/express/lib/application.js:618:24)
+    at main (/usr/local/lib/node_modules/ipapk-server/ipapk-server.js:238:7)
+    at Object.<anonymous> (/usr/local/lib/node_modules/ipapk-server/ipapk-server.js:110:3)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+http://192.168.88.241:1234
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::1234
+    at Object.exports._errnoException (util.js:949:11)
+    at exports._exceptionWithHostPort (util.js:972:20)
+    at Server._listen2 (net.js:1253:14)
+    at listen (net.js:1289:10)
+    at Server.listen (net.js:1385:5)
+    at EventEmitter.listen (/usr/local/lib/node_modules/ipapk-server/node_modules/express/lib/application.js:618:24)
+    at main (/usr/local/lib/node_modules/ipapk-server/ipapk-server.js:238:7)
+    at Object.<anonymous> (/usr/local/lib/node_modules/ipapk-server/ipapk-server.js:110:3)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+http://192.168.88.241:1234
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::1234
+    at Object.exports._errnoException (util.js:949:11)
+    at exports._exceptionWithHostPort (util.js:972:20)
+    at Server._listen2 (net.js:1253:14)
+    at listen (net.js:1289:10)
+    at Server.listen (net.js:1385:5)
+    at EventEmitter.listen (/usr/local/lib/node_modules/ipapk-server/node_modules/express/lib/application.js:618:24)
+    at main (/usr/local/lib/node_modules/ipapk-server/ipapk-server.js:238:7)
+    at Object.<anonymous> (/usr/local/lib/node_modules/ipapk-server/ipapk-server.js:110:3)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
