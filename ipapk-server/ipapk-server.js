@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var fs = require('fs-extra');
-// var https = require('https');
+var https = require('https');
 var path = require('path');
 var exit = process.exit;
 var pkg = require('./package.json');
@@ -104,8 +104,7 @@ excuteDB("CREATE TABLE IF NOT EXISTS info (\
 process.exit = exit
 
 // CLI
-// var basePath = "https://{0}:{1}".format(ipAddress, port);
-var basePath = "http://{0}:{1}".format(ipAddress, port);
+var basePath = "https://{0}:{1}".format(ipAddress, port);
 if (!exit.exited) {
   main();
 }
@@ -127,22 +126,22 @@ function main() {
 
   console.log(basePath);
 
-  // var key;
-  // var cert;
+  var key;
+  var cert;
 
-  // try {
-  //   key = fs.readFileSync(globalCerFolder + '/mycert1.key', 'utf8');
-  //   cert = fs.readFileSync(globalCerFolder + '/mycert1.cer', 'utf8');
-  // } catch (e) {
-  //   var result = exec('sh  ' + path.join(__dirname, 'bin', 'generate-certificate.sh') + ' ' + ipAddress).output;
-  //   key = fs.readFileSync(globalCerFolder + '/mycert1.key', 'utf8');
-  //   cert = fs.readFileSync(globalCerFolder + '/mycert1.cer', 'utf8');
-  // }
+  try {
+    key = fs.readFileSync(globalCerFolder + '/server.key', 'utf8');
+    cert = fs.readFileSync(globalCerFolder + '/server.crt', 'utf8');
+  } catch (e) {
+    var result = exec('sh  ' + path.join(__dirname, 'bin', 'generate-certificate.sh') + ' ' + ipAddress).output;
+    key = fs.readFileSync(globalCerFolder + '/server.key', 'utf8');
+    cert = fs.readFileSync(globalCerFolder + '/server.crt', 'utf8');
+  }
 
-  // var options = {
-  //   key: key,
-  //   cert: cert
-  // };
+  var options = {
+    key: key,
+    cert: cert
+  };
 
   var app = express();
   app.use('/cer', express.static(globalCerFolder));
@@ -234,8 +233,8 @@ function main() {
     });
   });
 
-  // https.createServer(options, app).listen(port);
-  app.listen(port);
+  https.createServer(options, app).listen(port);
+  // app.listen(port);
 }
 
 function errorHandler(error, res) {

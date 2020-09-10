@@ -2,11 +2,7 @@
 
 代码来源 [ipapk-server](https://github.com/zhao0/ipapk-server) 
 
-## 修改处 1：ipapk-server.js
-
-- https 修改为 http，证书没处理好
-
-## 修改处 2：node_modules/apk-parser3/index.js
+## 修改处 1：node_modules/apk-parser3/index.js
 
 - 修改 aapt 文件名
 - Mac 对应的 aapt 文件有问题，从 SDK 里复制了一份 aapt 文件就好了
